@@ -19,7 +19,7 @@ import {
   Info,
   TrendingUp,
   Shield,
-  Handshake
+  Link2
 } from 'lucide-react';
 
 // ============================================
@@ -898,7 +898,7 @@ ${recommendation.nextSteps.map(ns => `${ns.category}:\n${ns.items.map(i => `  â€
                       {recommendation.capabilityStatus === 'direct' ? (
                         <CheckCircle className="w-6 h-6 text-green-600" />
                       ) : recommendation.capabilityStatus === 'partnership' ? (
-                        <Handshake className="w-6 h-6 text-orange-600" />
+                        <Link2 className="w-6 h-6 text-orange-600" />
                       ) : (
                         <AlertTriangle className="w-6 h-6 text-yellow-600" />
                       )}
